@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="https://github.com/Kamefrede/BetterPiercing"
+
+[[mods]]
+modId="betterpiercing"
+displayName="Better Piercing"
+version="${version}"
+authors="Kamefrede"
+description='''
+Makes the Piercing enchantment subjectively better.
+'''
