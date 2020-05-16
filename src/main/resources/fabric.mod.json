@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "betterpiercing",
+  "version": "${version}",
+
+  "name": "Better Piercing",
+  "description": "Opinionated Crossbow Tweak",
+  "authors": [
+    "LKamefrede"
+  ],
+  "contact": {
+    "homepage": "https://kamefrede.xyz/",
+    "sources": "https://github.com/Kamefrede/BetterPiercing"
+  },
+
+  "license": "GPLv3",
+  "icon": "assets/betterpiercing/betterpiercing.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.kamefrede.betterpiercing.BetterPiercing"
+    ]
+  },
+  "mixins": [
+    "betterpiercing.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "<1.16  >=1.14"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
