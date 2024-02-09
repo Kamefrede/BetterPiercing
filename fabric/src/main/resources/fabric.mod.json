@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "betterpiercing",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://github.com/Kamefrede/BetterPiercing",
+        "sources": "https://github.com/Kamefrede/BetterPiercing"
+    },
+    "license": "${license}",
+    "icon": "assets/betterpiercing/betterpiercing.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+          "xyz.kamefrede.betterpiercing.BetterPiercing"
+        ]
+    },
+    "mixins": [
+        "betterpiercing.mixins.json",
+        "betterpiercing.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14",
+        "fabric": "*",
+        "minecraft": "1.20",
+        "java": ">=17"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
+  
