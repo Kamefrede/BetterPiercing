@@ -19,7 +19,6 @@ public class MixinLivingEntity {
 
 	@Inject(method = "getDamageAfterArmorAbsorb(Lnet/minecraft/world/damagesource/DamageSource;F)F", at = @At("HEAD"), cancellable = true)
 	private void addExtraCondition(DamageSource damageSource, float damageAmount, CallbackInfoReturnable<Float> callbackInfo) {
-		System.out.println("damageSource = " + damageSource + ", damageAmount = " + damageAmount + ", callbackInfo = " + callbackInfo);
 		if (damageSource.getDirectEntity() instanceof Arrow arrow) {
 			if (arrow.shotFromCrossbow() && arrow.getPierceLevel() > 0) {
 				LivingEntity entity = (LivingEntity)(Object)this;
